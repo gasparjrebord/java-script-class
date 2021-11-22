@@ -1,31 +1,31 @@
-let name, lastname, fullname, birthyear, age, month, birthday;
+let firstName, lastName, fullName, birthYear, age, month, birthDay;
 let currentYear = 2021;
 let minAge = 18;
 
 alert("Bienvenido al primer desafio de javascript!");
 
-name = prompt("Cual es tu nombre de pila?");
+firstName = prompt("Cual es tu nombre de pila?");
 
-lastname = prompt("Cual es tu apellido?");
+lastName = prompt("Cual es tu apellido?");
 
-fullname = name + " " + lastname;
+fullName = firstName + " " + lastName;
 
-birthyear = parseInt(prompt(fullname + ", en que año naciste?"));
+birthYear = parseInt(prompt(fullName + ", en que año naciste?"));
 
-age = currentYear - birthyear;
+age = currentYear - birthYear;
 
 if (age > minAge){
-    alert("Felicitaciones " + fullname + ", como tienes " + age + " años de edad puedes continuar");
+    alert("Felicitaciones " + fullName + ", como tienes " + age + " años de edad puedes continuar");
 
-    birthday = prompt("Numero del dia en que naciste");
+    birthDay = prompt("Numero del dia en que naciste");
 
     month = prompt("Nombre de tu mes de nacimiento");
 
-    alert("Naciste un " + birthday + " de " + month + " del " + birthyear + "?");
+    alert("Naciste un " + birthDay + " de " + month + " del " + birthYear + "?");
 
 };
 if (age < minAge){
-    alert("Lo siento " + fullname + ", me temo que no puedes continuar por tu edad");
+    alert("Lo siento " + fullName + ", me temo que no puedes continuar por tu edad");
 };
 
 
