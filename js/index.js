@@ -1,3 +1,15 @@
+/**
+ * @challenge: Crear un algoritmo JS simple
+ * 
+ * @version: v1.0.0
+ * @author: Indica el nombre del autor del código.
+ * @fecha: 23/11/2021
+ *
+ * History:
+ *  - v1.0.0 – Primera entrega
+ */
+// Código de aquí en adelante
+
 let firstName, lastName, fullName, birthYear, age, month, birthDay;
 let currentYear = 2021;
 let minAge = 18;
