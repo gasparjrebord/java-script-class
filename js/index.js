@@ -35,8 +35,7 @@ if (age > minAge){
 
     alert("Naciste un " + birthDay + " de " + month + " del " + birthYear + "?");
 
-};
-if (age < minAge){
+} else{
     alert("Lo siento " + fullName + ", me temo que no puedes continuar por tu edad");
 };
 
