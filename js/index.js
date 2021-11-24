@@ -1,9 +1,9 @@
 /**
- * @challenge: Crear un algoritmo JS simple
+ * @challenge: Desafío: crear un algoritmo con un condicional
  * 
  * @version: v1.0.0
  * @author: Indica el nombre del autor del código.
- * @fecha: 23/11/2021
+ * @fecha: 25/11/2021
  *
  * History:
  *  - v1.0.0 – Primera entrega
@@ -17,26 +17,24 @@ let minAge = 18;
 alert("Bienvenido al primer desafio de javascript!");
 
 firstName = prompt("Cual es tu nombre de pila?");
-
 lastName = prompt("Cual es tu apellido?");
-
 fullName = firstName + " " + lastName;
 
-birthYear = parseInt(prompt(fullName + ", en que año naciste?"));
+if (firstName != "" && lastName != ""){
+    birthYear = parseInt(prompt(fullName + ", en que año naciste?"));
+    age = currentYear - birthYear;
+    if (age > minAge){
 
-age = currentYear - birthYear;
+        alert("Felicitaciones " + fullName + ", como tienes " + age + " años de edad puedes continuar");
 
-if (age > minAge){
-    alert("Felicitaciones " + fullName + ", como tienes " + age + " años de edad puedes continuar");
+        birthDay = prompt("Numero del dia en que naciste");
 
-    birthDay = prompt("Numero del dia en que naciste");
+        month = prompt("Nombre de tu mes de nacimiento");
 
-    month = prompt("Nombre de tu mes de nacimiento");
-
-    alert("Naciste un " + birthDay + " de " + month + " del " + birthYear + "?");
-
-} else{
-    alert("Lo siento " + fullName + ", me temo que no puedes continuar por tu edad");
-};
-
-
+        alert("Naciste un " + birthDay + " de " + month + " del " + birthYear + "?");
+    }else {
+        alert("Lo siento " + fullName + ", me temo que no puedes continuar por tu edad");
+    };
+}else{
+    alert("Lo siento, ha habido un problema con su nombre");
+}
