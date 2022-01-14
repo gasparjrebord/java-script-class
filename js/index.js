@@ -77,8 +77,8 @@ $(document).ready(function () {
 
     $(".btn").click(function (e) {
         e.preventDefault();
-        $(".btn-primary").slideUp(1000).delay(1000).slideDown(2000);
-        $(".btn-success").slideDown(1000).delay(1000).slideUp(2000);
+        $(".btn-primary").hide(500).delay(1000).show(500);
+        $(".btn-success").show(500).delay(1000).hide(500);
 
 
     });
