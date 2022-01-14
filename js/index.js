@@ -60,6 +60,7 @@ $(document).ready(function () {
                                                     <h5 class="card-title">${card.type} ${card.brand}</h5>
                                                     <p class="card-text">${card.color}, ${card.material} </p>
                                                     <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                                                    <a href="#" style="display: none" class="btn btn-success">Añadido con exito!</a>
                                                     <p class="card-text"><small class="text-muted">$${card.price}</small></p>
                                                 </div>
                                             </div>
@@ -74,7 +75,13 @@ $(document).ready(function () {
 
 
 
+    $(".btn").click(function (e) {
+        e.preventDefault();
+        $(".btn-primary").slideUp(1000).delay(1000).slideDown(2000);
+        $(".btn-success").slideDown(1000).delay(1000).slideUp(2000);
 
+
+    });
 
 
 });
