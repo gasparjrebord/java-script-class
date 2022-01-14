@@ -66,12 +66,8 @@ $(document).ready(function () {
                             `);
     }
 
-
-
-
-
-
-
+    $(".card").css("margin", "10px");
+    $(".card-img-top").css("height", "250px");
 
 
 
